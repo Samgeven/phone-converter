@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Главная</title>
+            <meta charset="UTF-8">
+            <meta name="viewport">
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+        </head>
+        <body>
+            <div class="main container mt-5">
+                <div class="text-center">
+                    <h1 class="main__title">
+                        Phone number converter
+                    </h1>
+                    <p class="main__description mt-4">
+                        Converter allows to get rid of hyphens and brackets in phone numbers
+                    </p>
+                    <p class="textarea__label mt-5">
+                        Enter your phone numbers, separated by coma
+                    </p>
+                    <textarea id="input1" style="width: 400px; min-height: 100px"></textarea>
+                    <p class="textarea__label mt-5">
+                        Result will appear here:
+                    </p>
+                    <textarea id="input2" style="width: 400px; min-height: 100px"></textarea>
+                    <div class="button_wrp mt-4">
+                        <button id="actionBtn">Go!</button>
+                        <button id="clearBtn">Clear</button>
+                        <button id="copyBtn">Copy result</button>
+                    </div>
+                </div>
+            </div>
+        
+        <script src="main.js"></script> 
+        </body>
