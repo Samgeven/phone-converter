@@ -11,7 +11,8 @@ plusCheck.addEventListener("change", function () {
 btn.addEventListener("click", function () {
     var num = document.getElementById("input1").value;
     var res = document.getElementById("input2");
-    var replacer = '7';
+    // country code
+    var countryCode = '7';
 
     // prevent function execution if input is blank
 
@@ -19,7 +20,7 @@ btn.addEventListener("click", function () {
         return false
     }
 
-    !plusCheck.checked ? replacer = "+" + replacer : replacer
+    !plusCheck.checked ? countryCode = "+" + countryCode : countryCode
 
     num = num.split(',');
                 
@@ -29,11 +30,11 @@ btn.addEventListener("click", function () {
         num[i] = num[i].replace(/\D/g, '')
  
         if (num[i].length == 10) {
-            num[i] = replacer + num[i];
+            num[i] = countryCode + num[i];
             newArr.push(num[i]);
         }
         else {
-            num[i] = num[i].replace(/^\d/, replacer);
+            num[i] = num[i].replace(/^\d/, countryCode);
             newArr.push(num[i]);
         }
     }
